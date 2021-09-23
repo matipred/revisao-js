@@ -5,5 +5,5 @@
 // 1 - git pull
 // 2 - escreve alguma alteração
 // 3 - git commit
-// 4 - git pull
+// 4 - git pull denovo
 // 5 - git push
