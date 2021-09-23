@@ -8,5 +8,3 @@
 // 4 - git pull denovo
 // 5 - resolver conflitos
 // 6 - git push
-
--- fiz caquinha
