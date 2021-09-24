@@ -30,3 +30,8 @@ function letraMaiuscula()
     resultado.innerText = letra + resto;
 
 }
+
+function valorPagar()
+{
+    
+}
