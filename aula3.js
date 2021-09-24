@@ -15,3 +15,13 @@ CuRITiba -> Curitiba
 3 - Faça uma pesquisa em um texto e informe se foi encontrado ou não
 
 */
+
+function letraMaiuscula()
+{
+    var texto = document.getElementById("texto").value;
+    var resultado = document.getElementById("resultado");
+
+    resultado.innerText = texto;
+
+    console.log(resultado);
+}
