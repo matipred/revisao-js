@@ -21,7 +21,12 @@ function letraMaiuscula()
     var texto = document.getElementById("texto").value;
     var resultado = document.getElementById("resultado");
 
-    resultado.innerText = texto;
+    // Retorna a primeira letra em maiucula
+    var letra = texto.charAt(0).toUpperCase();
 
-    console.log(resultado);
+    // coloca o resto em minuscula
+    var resto = texto.substr(1).toLowerCase();
+
+    resultado.innerText = letra + resto;
+
 }
