@@ -45,3 +45,21 @@ function valorPagar()
     console.log(resultado, valor, quant)
 
 }
+
+function pesquisar() 
+{
+    var resultado = document.getElementById("resultado");
+    var palavra = document.getElementById("palavra");
+    var texto = document.getElementById("conteudo");
+
+    var existe = texto.value.includes(palavra.value);
+
+    if (existe == true) 
+    {
+        resultado.innerHTML = "Valor Encontrado";
+    } else {
+        resultado.innerHTML = "Valor não Encontrado";
+    }
+
+    console.log(resultado, palavra, texto)
+}
