@@ -33,5 +33,15 @@ function letraMaiuscula()
 
 function valorPagar()
 {
+    var resultado = document.getElementById("resultado");
     
+    var valor = document.getElementById("valor").value;
+    var quant = document.getElementById("quant").value;
+
+    var total = parseFloat(valor) * parseFloat(quant);
+
+    resultado.innerText = total;
+
+    console.log(resultado, valor, quant)
+
 }
