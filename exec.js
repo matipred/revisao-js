@@ -14,17 +14,56 @@ var romanos = {
     M:1000
 }
 
+/*
+function verifyValue(number) {
+ var letters = number.split("");
+ var total = 0;
+ 
+ for (var i = 0; i < letters.length; i++){
+ 
+ var current = letters[i];
+ var next = letters[i+1];
+ 
+ if (next == null || romanos[current] >= romanos[next]){
+ total = total + romanos[current];
+ } else {
+ total = total + (romanos[next] - romanos[current]);
+ i++;
+ }
+ }
+ console.log(total);
+}
+*/
+
 function converteRomanos(numero)
 {
     
     var fim = numero.length - 1;
 
     var arabico = 0;
-
-    for (var ini = 0; ini < fim; ini = ini + 1) 
+    
+    for (var ini = 0; ini <= fim; ini = ini + 1) 
     {
-        var char = numero.charAt(ini);
-        arabico = arabico + romanos[char];
+        var atual = numero.charAt(ini);
+        var proximo = numero.charAt(ini + 1);
+        var valor = romanos[atual];
+
+        console.log(atual, proximo, valor)
+
+        if (proximo == null) 
+        {
+            arabico = arabico + valor; 
+
+        } else if (romanos[atual] >= romanos[proximo]) 
+        {
+            arabico = arabico + valor;    
+        } else 
+        {
+            arabico = arabico + valor - romanos[proximo];   
+            ini++;
+        }
+        
+        anterior = valor;
         
     }
 
