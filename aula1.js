@@ -9,3 +9,5 @@
 // 5 - resolver conflitos
 // 6 - git push
 // 7 - teste clone
+// 8 - novo commit
+
